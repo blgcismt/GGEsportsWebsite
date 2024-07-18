@@ -1,0 +1,85 @@
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-table th {
+    background-color: #000000;
+    color: white;
+    padding: 12px 8px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.leaderboard-table td {
+    border: 1px solid #ccc;
+    padding: 10px 8px;
+    text-align: left;
+    font-size: 0.95em;
+}
+
+.leaderboard-table tr:hover {
+    background-color: #d1e0e0;
+}
+
+.leaderboard-table tr.promotion {
+    background-color: #d4edda;
+}
+
+.leaderboard-table tr.relegation {
+    background-color: #f8d7da; 
+}
+
+.leaderboard-table tr:nth-child(even):not(.promotion):not(.relegation) {
+    background-color: #f9f9f9;
+}
+
+.leaderboard-table tr:nth-child(odd):not(.promotion):not(.relegation) {
+    background-color: #f9f9f9; 
+}
+
+.leaderboard-table tr:hover {
+    background-color: #d1e0e0; 
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tab-button.active {
+    background-color: #565656;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tab-button:hover {
+    background-color: #6e6e6e;
+    transform: scale(1.05);
+}
+
+.tab-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

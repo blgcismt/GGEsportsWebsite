@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar span {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links .active-link {
+  background-color: #333; 
+  text-decoration: underline; 
+}
+
+.language-switcher {
+  position: relative;
+}
+
+.language-icon {
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.language-dropdown {
+  position: absolute;
+  background-color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  right: 0;
+  top: 30px;
+  list-style-type: none;
+  padding: 5px 0;
+  z-index: 100;
+}
+
+.language-dropdown li {
+  padding: 5px 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.language-dropdown li:hover {
+  background-color: #e2e2e2;
+  color: black;
+}
+
+.footer {
+  background-color: black; 
+  color: white; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-top: 1px solid #333;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.footer-text {
+  font-weight: bold;
+  color: white;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-contact a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+  color: #aaa;
+}
+
+.footer-copy {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
